@@ -14,20 +14,23 @@ body {
     align-items: center; 
 }
 .topo h1 {
-    padding-top: 0px;
+    padding-top: 20px;
     font-size: 85px;
-    line-height: 90px;
+    line-height: 85px;
     padding-left: 25px;
     padding-bottom: 15px;
     border-bottom: 4px solid antiquewhite;
     display: inline-block;
     width: max-content;
+    margin: 0;
 }
+
 .topo h2 {
     font-size: 50px;
     padding-top: 0px;
-    line-height: 25px;
+    line-height: 55px;
     padding-left: 400px;
+    margin-top: 10px;
 }
 .topo h3 {
     font-size: 18px;
@@ -40,4 +43,7 @@ body {
     border-radius: 50%; 
     object-fit: cover; 
     flex-shrink: 0; 
+}
+.pagina-inicial-santuario {
+    
 }
