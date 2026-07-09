@@ -1,7 +1,16 @@
 body {
     background-color:antiquewhite;
+    font-weight: 85px;
+    padding-top: 3px;
+}
+.topo {
+   background-color: #632100;
+    color:antiquewhite;
 
 }
 .topo img {
-    size: 10px;
+    width:300px;
+    max-width: 100%;
+    height:auto;
+    border-radius: 2050px;
 }
