@@ -16,8 +16,12 @@ body {
 .topo h1 {
     padding-top: 0px;
     font-size: 85px;
-    line-height: 5px;
+    line-height: 90px;
     padding-left: 25px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid antiquewhite;
+    display: inline-block;
+    width: max-content;
 }
 .topo h2 {
     font-size: 50px;
