@@ -1,49 +1,169 @@
 body {
-    background-color: antiquewhite;
-    font-weight: bold; 
-    padding-top: 10px;
-    margin: 0;
+  background-color: antiquewhite;
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
 }
 
 .topo {
-    background-color: #632100; 
-    color: antiquewhite;
-    padding-top:5px;
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    align-items: center; 
+  background-color: #632100;
+  color: antiquewhite;
+  padding-top: 5px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
 }
+
 .topo h1 {
-    padding-top: 20px;
-    font-size: 85px;
-    line-height: 85px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    border-bottom: 4px solid antiquewhite;
-    display: inline-block;
-    width: max-content;
-    margin: 0;
+  padding-top: 20px;
+  font-size: 85px;
+  line-height: 85px;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid antiquewhite;
+  display: inline-block;
+  width: max-content;
+  margin: 0;
 }
 
 .topo h2 {
-    font-size: 50px;
-    padding-top: 0px;
-    line-height: 55px;
-    padding-left: 400px;
-    margin-top: 10px;
+  font-size: 50px;
+  padding-top: 0px;
+  line-height: 55px;
+  padding-left: 400px;
+  margin-top: 10px;
 }
+
 .topo h3 {
-    font-size: 18px;
-    line-height: 25px;
-    padding-left: 1050px;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 1050px;
 }
+
 .topo img {
-    width: 300px;        
-    height: 300px;    
-    border-radius: 50%; 
-    object-fit: cover; 
-    flex-shrink: 0; 
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
+
 .pagina-inicial-santuario {
-    
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 30px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-santuario,
+.santuario-tornado,
+.padre,
+.horarios-missas {
+  background-color: #faf0e6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.padre{
+  margin-top: 25px;
+}
+.horarios-missas {
+    margin-top: 75px;
+}
+
+.pagina-inicial-santuario h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.pagina-inicial-santuario p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imagem {
+  margin-left: 20px;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.santuario-tornado h2 {
+  padding-left: 0;
+}
+
+.santuario-tornado p {
+  font-size: 20px;
+}
+
+.padre {
+  overflow: hidden;
+}
+
+.padre img {
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.padre h2 {
+  font-size: 32px;
+  margin: 0 0 5px 0;
+}
+
+.padre h3 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  color: #632100;
+}
+
+.padre p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.horarios-missas h2 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+}
+
+.conteudo-horarios {
+  display: flex;
+  gap: 20px;
+}
+
+.item-horario {
+  flex: 1;
+}
+
+.horarios-missas h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #632100;
+}
+
+.horarios-missas p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
