@@ -167,3 +167,42 @@ p {
   margin: 0;
   padding: 0;
 }
+
+
+.menu-navegacao {
+    background-color: #4a1900; 
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+.menu-navegacao a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+
+.menu-navegacao a:hover {
+    background-color: antiquewhite;
+    color: #632100;
+    transform: scale(1.05); 
+}
+
+html {
+    scroll-behavior: smooth;
+}
