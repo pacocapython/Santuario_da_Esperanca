@@ -1,0 +1,419 @@
+body {
+  background-color: antiquewhite;
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.topo {
+  background-color: #632100;
+  color: antiquewhite;
+  padding-top: 5px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
+}
+
+.topo h1 {
+  padding-top: 20px;
+  font-size: 85px;
+  line-height: 85px;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid antiquewhite;
+  display: inline-block;
+  width: max-content;
+  margin: 0;
+}
+
+.topo h2 {
+  font-size: 50px;
+  padding-top: 0px;
+  line-height: 55px;
+  padding-left: 400px;
+  margin-top: 10px;
+}
+
+.topo h3 {
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 1050px;
+}
+
+.topo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.pagina-inicial-santuario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 30px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-santuario,
+.santuario-tornado,
+.padre,
+.horarios-missas {
+  background-color: #faf0e6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.padre{
+  margin-top: 25px;
+}
+.horarios-missas {
+    margin-top: 75px;
+}
+
+.pagina-inicial-santuario h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.pagina-inicial-santuario p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imagem {
+  margin-left: 20px;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.santuario-tornado h2 {
+  padding-left: 0;
+}
+
+.santuario-tornado p {
+  font-size: 20px;
+}
+
+.padre {
+  overflow: hidden;
+}
+
+.padre img {
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.padre h2 {
+  font-size: 32px;
+  margin: 0 0 5px 0;
+}
+
+.padre h3 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  color: #632100;
+}
+
+.padre p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.horarios-missas h2 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+}
+
+.conteudo-horarios {
+  display: flex;
+  gap: 20px;
+}
+
+.item-horario {
+  flex: 1;
+}
+
+.horarios-missas h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #632100;
+}
+
+.horarios-missas p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-navegacao {
+    background-color: #4a1900; 
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+.menu-navegacao a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+
+.menu-navegacao a:hover {
+    background-color: antiquewhite;
+    color: #632100;
+    transform: scale(1.05); 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* =========================================
+   ESTILOS DA PÁGINA SOBRE O SANTUÁRIO
+   ========================================= */
+
+.container-sobre {
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid-sobre {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-sobre {
+    flex: 1;
+    background-color: #FAF0E6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-sobre h2 {
+    font-size: 32px;
+    color: #632100;
+    margin-top: 0;
+}
+
+.card-sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* GALERIA DE FOTOS EM LINHA RETA */
+.secao-galeria {
+    background-color: #FAF0E6;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.secao-galeria h2 {
+    font-size: 32px;
+    color: #632100;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.carrosel-linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.foto-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.foto-item img:hover {
+    transform: scale(1.03);
+}
+
+.foto-item span {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #632100;
+    font-weight: bold;
+}
+
+/* SEÇÃO DE TESTEMUNHOS */
+.secao-testemunhos {
+    background-color: #FAF0E6;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.secao-testemunhos h2 {
+    font-size: 32px;
+    color: #632100;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitulo-secao {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.grid-testemunhos {
+    display: flex;
+    gap: 20px;
+}
+
+.card-testemunho {
+    flex: 1;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #632100;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-testemunho:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-testemunho h3 {
+    margin-top: 0;
+    color: #632100;
+    font-size: 22px;
+}
+
+.card-testemunho .resumo {
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #333;
+}
+
+.btn-ler {
+    display: inline-block;
+    margin-top: 10px;
+    color: #632100;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ESTILO DO MODAL (POP-UP) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.conteudo-modal {
+    background-color: #FAF0E6;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: surgirModal 0.3s ease;
+}
+
+@keyframes surgirModal {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #632100;
+    cursor: pointer;
+}
+
+.divisor-modal {
+    border: 0;
+    height: 2px;
+    background-color: #632100;
+    margin: 15px 0;
+}
+
+#modalTexto {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
