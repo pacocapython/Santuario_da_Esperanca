@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Santuário - Santuário Santo Antônio de Pádua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu-navegacao">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="#horarios">Horários e Atendimentos</a></li>
+            <li><a href="#pastorais">Pastorais e Movimentos</a></li>
+            <li><a href="#eventos">Eventos e Festas</a></li>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <header class="topo">
+        <img src="SantuárioLogo.jpg" alt="Logo" class="logo" />
+        <div class="textos-topo">
+            <h1>Santuário Santo Antônio de Pádua</h1>
+            <h2>Santuário da Esperança</h2>
+            <h3>
+                Romanos 5,5 <br />
+                "A esperança não decepciona, porque o amor de Deus foi derramado<br />
+                em nossos corações pelo Espírito Santo que nos foi dado."
+            </h3>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA SOBRE -->
+    <main class="container-sobre">
+        
+        <!-- SEÇÃO 1: TEXTOS PRINCIPAIS (SOBRE + TORNADO) -->
+        <section class="grid-sobre">
+            <div class="card-sobre">
+                <h2>Sobre o nosso Santuário</h2>
+                <p>
+                    O Santuário Santo Antônio de Pádua, localizado em Rio Bonito do Iguaçu - PR 
+                    e pertencente à Diocese de Guarapuava, é um lugar de fé, acolhimento e esperança. 
+                    Nossa igreja conta com celebrações de missas semanais e dominicais, atendimento 
+                    na secretaria paroquial, além de diversas pastorais e movimentos que transformam 
+                    vidas e fortalecem a caminhada cristã de nossos fiéis.
+                </p>
+                <img class="imagem-destaque" src="igreja.jpeg" alt="Igreja Santuário">
+            </div>
+
+            <div class="card-sobre">
+                <h2>Santuário da Esperança: O Milagre do Tornado</h2>
+                <p>
+                    No dia 07/11/2025, a cidade de Rio Bonito do Iguaçu foi atingida pelo tornado, 
+                    e na nossa igreja haviam abrigadas 200 pessoas para a Missa de Crisma, quando por volta das 18:40, 
+                    o tornado passou pela cidade. As pessoas que estavam dentro da igreja se uniram em oração e todas elas 
+                    foram protegidas, onde Deus colocou suas mãos sobre esta igreja, sob intercessão de Nossa Senhora e 
+                    Santo Antônio de Pádua. A igreja serviu como ponto de arrecadação, entrega de alimentos, doações e abrigo, 
+                    até que no dia 28 de Dezembro, a até então Paróquia foi elevada a Santuário Santo Antônio de Pádua, o Santuário da Esperança.
+                </p>
+                <img class="imagem-destaque" src="IgrejaTornado.jpeg" alt="Santuário após o Tornado">
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: GALERIA DE FOTOS EM LINHA RETA -->
+        <section class="secao-galeria">
+            <h2>Galeria do Santuário</h2>
+            <div class="carrosel-linha">
+                <div class="foto-item">
+                    <img src="igreja.jpeg" alt="Santuário Foto 1">
+                    <span>Nossa Igreja</span>
+                </div>
+                <div class="foto-item">
+                    <img src="IgrejaTornado.jpeg" alt="Santuário Foto 2">
+                    <span>Momento Histórico</span>
+                </div>
+                <div class="foto-item">
+                    <img src="padre.png" alt="Santuário Foto 3">
+                    <span>Atendimento Pastoral</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: TESTEMUNHOS -->
+        <section class="secao-testemunhos">
+            <h2>Testemunhos de Fé</h2>
+            <p class="subtitulo-secao">Clique em um testemunho para ler a história completa:</p>
+
+            <div class="grid-testemunhos">
+                <div class="card-testemunho" onclick="abrirModal('testemunho1')">
+                    <h3>Maria da Silva</h3>
+                    <p class="resumo">"A proteção divina durante o tornado mudou a minha vida e fortaleceu minha fé..."</p>
+                    <span class="btn-ler">Ler depoimento completo &rarr;</span>
+                </div>
+
+                <div class="card-testemunho" onclick="abrirModal('testemunho2')">
+                    <h3>João Carlos</h3>
+                    <p class="resumo">"Estava presente na Crisma no dia do tornado. Sentimos a presença de Deus nos protegendo..."</p>
+                    <span class="btn-ler">Ler depoimento completo &rarr;</span>
+                </div>
+
+                <div class="card-testemunho" onclick="abrirModal('testemunho3')">
+                    <h3>Ana Paula</h3>
+                    <p class="resumo">"O Santuário da Esperança é um porto seguro para a nossa família e toda a comunidade..."</p>
+                    <span class="btn-ler">Ler depoimento completo &rarr;</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL DE TESTEMUNHO (POP-UP) -->
+    <div id="modalTestemunho" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+            <h2 id="modalNome">Nome do Fiel</h2>
+            <hr class="divisor-modal">
+            <p id="modalTexto">Texto completo do testemunho aqui...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
