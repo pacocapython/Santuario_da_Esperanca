@@ -544,3 +544,90 @@ html {
     font-size: 14px;
     color: #666;
 }
+
+/* =========================================
+   ESTILOS DA PÁGINA DE PASTORAIS E MOVIMENTOS
+   ========================================= */
+
+.container-pastorais {
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid-pastorais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card-pastoral-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-pastoral {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #632100;
+}
+
+.card-pastoral:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-pastoral img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.card-pastoral h3 {
+    margin: 0 0 10px 0;
+    color: #632100;
+    font-size: 22px;
+}
+
+.card-pastoral p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.btn-ver-mais {
+    font-weight: bold;
+    color: #632100;
+    font-size: 15px;
+}
+
+.voltar-link {
+    margin-bottom: 20px;
+}
+
+.voltar-link a {
+    color: #632100;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #FAF0E6;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.voltar-link a:hover {
+    background-color: antiquewhite;
+}
