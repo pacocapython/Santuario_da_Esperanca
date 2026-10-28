@@ -643,16 +643,22 @@ html {
   margin: 0 auto;
 }
 
+/* CONTAINER DA GRADE */
+/* 1. O RECIPIENTE DA GRELHA */
 .grid-pastorais {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 80px;    /* ESPAÇO GIGANTE ENTRE LINHAS (pode diminuir depois se achar muito) */
+  column-gap: 25px; /* Espaço lateral entre os cartões */
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
+/* 2. O LINK QUE ENVOLVE O CARTÃO */
 .card-pastoral-link {
   text-decoration: none;
   color: inherit;
+  display: block; /* Essencial para o espaçamento funcionar */
 }
 
 .card-pastoral {
@@ -662,10 +668,10 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-top: 4px solid #632100;
+  margin-bottom: 0; /* Remova qualquer margem daqui */
 }
 
 .card-pastoral:hover {
