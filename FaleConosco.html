@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Santuário Santo Antônio de Pádua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO SUPERIOR -->
+    <nav class="menu-navegacao">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="SobreSantuario.html">Sobre o Santuário</a></li>
+            <li><a href="HorariosAtendimentos.html">Horários e Atendimentos</a></li>
+            <li><a href="PastoraisMovimentos.html">Pastorais e Movimentos</a></li>
+            <li><a href="EventosFestas.html">Eventos e Festas</a></li>
+            <li><a href="FaleConosco.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER TOPO -->
+    <header class="topo">
+        <img src="SantuárioLogo.jpg" alt="Logo" class="logo" />
+        <div class="textos-topo">
+            <h1>Santuário Santo Antônio de Pádua</h1>
+            <h2>Santuário da Esperança</h2>
+            <h3>
+                Romanos 5,5 <br />
+                "A esperança não decepciona, porque o amor de Deus foi derramado<br />
+                em nossos corações pelo Espírito Santo que nos foi dado."
+            </h3>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-pastorais">
+        
+        <!-- SEÇÃO PRINCIPAL: VELA VIRTUAL + REGISTRO E ORAÇÃO -->
+        <section class="secao-bloco">
+            <h2>Acenda uma Vela Virtual e Registre sua Visita</h2>
+            <p class="descricao-secao">
+                Eleve suas intenções a Santo Antônio. Ao acender sua vela, registre sua visita ao nosso Santuário e envie seu pedido de oração para a nossa comunidade.
+            </p>
+
+            <div class="container-vela-destaque">
+                <!-- COLUNA DA IMAGEM DA VELA -->
+                <div class="coluna-imagem-vela">
+                    <img src="vela.jpg" alt="Vela Virtual do Santuário" class="imagem-vela" />
+                </div>
+
+                <!-- COLUNA DO FORMULÁRIO -->
+                <div class="coluna-form-vela card-horarios-detalhe">
+                    <form action="#" method="POST">
+                        <div>
+                            <label for="nome"><strong>Nome Completo:</strong></label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div>
+                            <label for="cidade"><strong>Cidade / Estado:</strong></label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Ex: Rio Bonito do Iguaçu - PR">
+                        </div>                        
+
+                        <div>
+                            <label for="pedido-oracao"><strong>Pedido de Oração:</strong></label>
+                            <textarea id="pedido-oracao" name="pedido-oracao" rows="4" placeholder="Escreva aqui suas intenções e pedidos de oração..." required></textarea>
+                        </div>
+
+                        <div>
+                            <label for="pedido-oracao"><strong>Registro de Visita:</strong></label>
+                            <textarea id="pedido-oracao" name="pedido-oracao" rows="4" placeholder="Escreva aqui sua mensagem de visita..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-ver-mais">Acender Vela e Registrar Visita</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: SUPORTE, TESTEMUNHOS E COMENTÁRIOS -->
+        <section class="secao-bloco">
+            <h2>Suporte e Mural da Comunidade</h2>
+            <p class="descricao-secao">
+                Precisa de ajuda com o site, quer deixar um testemunho de graça alcançada ou enviar um comentário sobre o Santuário?
+            </p>
+
+            <div class="card-horarios-detalhe">
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nome-comentario"><strong>Nome:</strong></label>
+                        <input type="text" id="nome-comentario" name="nome-comentario" placeholder="Seu nome" required>
+                    </div>
+                    <div>
+                        <label for="tipo-mensagem"><strong>Assunto / Categoria:</strong></label>
+                        <select id="tipo-mensagem" name="tipo-mensagem">
+                            <option>Testemunho de Graça Alcançada</option>
+                            <option>Comentário sobre o Santuário</option>
+                            <option>Sugestão ou Elogio sobre o Site</option>
+                            <option>Suporte / Ajuda / Dúvidas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem-texto"><strong>Sua Mensagem:</strong></label>
+                        <textarea id="mensagem-texto" name="mensagem-texto" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-ver-mais">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: CONTATOS DIRETO COM A SECRETARIA -->
+        <section class="secao-bloco">
+            <h2>Outras Formas de Contato</h2>
+            <div class="card-horarios-detalhe">
+                <ul class="lista-horarios">
+                    <li><strong>Telefone / WhatsApp da Secretaria:</strong> (42) 9 3653-1120</li>
+                    <li><strong>E-mail Paroquial:</strong> paroquiariobonitodoiguacu@gmail.com</li>
+                    <li><strong>Endereço:</strong> Centro, Rio Bonito do Iguaçu - PR</li>
+                    <li><strong>Atendimento Presencial:</strong> Segunda a Sexta (07:30 às 12:00 | 13:30 às 16:00)</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ MARROM DE CONTATOS -->
+    <footer class="rodape">
+      <div class="container-rodape">
+        <div class="coluna-rodape">
+          <h3>Santuário Santo Antônio de Pádua</h3>
+          <p>Santuário da Esperança</p>
+          <p>Diocese de Guarapuava - PR</p>
+        </div>
+        
+        <div class="coluna-rodape">
+          <h3>Contatos</h3>
+          <p><strong>Telefone/WhatsApp:</strong> (42) 9 3653-1120</p>
+          <p><strong>E-mail:</strong> paroquiariobonitodoiguacu@gmail.com</p>
+          <p><strong>Endereço:</strong> Rio Bonito do Iguaçu - PR</p>
+        </div>
+
+        <div class="coluna-rodape">
+          <h3>Horário da Secretaria</h3>
+          <p>Segunda a Sexta: 07:30 às 12:00 | 13:30 às 16:00</p>
+          <p>Sábado: 08:00 às 11:00</p>
+        </div>
+      </div>
+      <div class="direitos-rodape">
+        <p>&copy; Santuário Santo Antônio de Pádua. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+</body>
+</html>
